@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl4epceb4rcpa"
-path="res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"
+uid="uid://cle38hea3pefs"
+path="res://.godot/imported/Rocket_3-removebg-preview.png-df567707f8eaa9e4e2684755dd8fc718.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu Assets/start button pressed.png"
-dest_files=["res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"]
+source_file="res://Assets/Character Assets/Rocket_3-removebg-preview.png"
+dest_files=["res://.godot/imported/Rocket_3-removebg-preview.png-df567707f8eaa9e4e2684755dd8fc718.ctex"]
 
 [params]
 

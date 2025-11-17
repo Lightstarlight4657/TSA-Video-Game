@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl4epceb4rcpa"
-path="res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"
+uid="uid://bc4mneyrhayru"
+path="res://.godot/imported/Spage Angels Logo.png-22b6b21c1c96ca211f9e92916a554a93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu Assets/start button pressed.png"
-dest_files=["res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"]
+source_file="res://Assets/Menu Assets/Spage Angels Logo.png"
+dest_files=["res://.godot/imported/Spage Angels Logo.png-22b6b21c1c96ca211f9e92916a554a93.ctex"]
 
 [params]
 

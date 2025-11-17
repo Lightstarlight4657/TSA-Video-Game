@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl4epceb4rcpa"
-path="res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"
+uid="uid://hi1xgl8dsa8d"
+path="res://.godot/imported/Option button pressed.png-4474f5a7628b4a3c7c11d7a6bd05d50f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu Assets/start button pressed.png"
-dest_files=["res://.godot/imported/start button pressed.png-4649bb80778d00ed868ec33d639d320b.ctex"]
+source_file="res://Assets/Menu Assets/Option button pressed.png"
+dest_files=["res://.godot/imported/Option button pressed.png-4474f5a7628b4a3c7c11d7a6bd05d50f.ctex"]
 
 [params]
 

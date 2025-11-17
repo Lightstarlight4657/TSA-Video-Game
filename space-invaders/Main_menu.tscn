@@ -1,16 +1,18 @@
-[gd_scene load_steps=14 format=3 uid="uid://cmsvo7gxethck"]
+[gd_scene load_steps=16 format=3 uid="uid://cmsvo7gxethck"]
 
 [ext_resource type="Shader" uid="uid://dbn8wymv285ed" path="res://Scroll.gdshader" id="1_56ax1"]
-[ext_resource type="Texture2D" uid="uid://dpt6cje00l5tb" path="res://Assets/Menu Assets/Start Button.png" id="1_x6lt7"]
 [ext_resource type="Texture2D" uid="uid://cpcke455kk5nb" path="res://Assets/Menu Assets/BetterPlanets.png" id="2_ljai8"]
-[ext_resource type="Texture2D" uid="uid://dvvf3yiae2uep" path="res://Assets/Menu Assets/start button pressed.png" id="2_rlxw3"]
-[ext_resource type="Texture2D" uid="uid://cp54c2pt11rmc" path="res://Assets/Menu Assets/Start Button Hover.png" id="2_x2ps0"]
-[ext_resource type="Texture2D" uid="uid://bwam1tq4k3yb" path="res://Assets/Menu Assets/Option Button.png" id="4_rlxw3"]
-[ext_resource type="Texture2D" uid="uid://tghkq5x8i4yb" path="res://Assets/Menu Assets/Option Button Hover.png" id="6_56ax1"]
-[ext_resource type="Texture2D" uid="uid://b27jcunonwpaj" path="res://Assets/Menu Assets/Credits Button.png" id="7_ljai8"]
-[ext_resource type="Texture2D" uid="uid://cftw68tudd05a" path="res://Assets/Menu Assets/Menu Assets/Credits Button Pressed.png" id="8_minev"]
-[ext_resource type="Texture2D" uid="uid://cuinyd72no7tj" path="res://Assets/Menu Assets/Credits Button Hover.png" id="9_j4lre"]
-[ext_resource type="Texture2D" uid="uid://bllygc48wfkjr" path="res://Assets/Menu Assets/Menu Assets/Space Angels.png" id="10_l05ls"]
+[ext_resource type="Texture2D" uid="uid://bl4epceb4rcpa" path="res://Assets/Menu Assets/start button pressed.png" id="2_rlxw3"]
+[ext_resource type="Texture2D" uid="uid://b0blxrgd57701" path="res://Assets/Menu Assets/Option button.png" id="3_minev"]
+[ext_resource type="Texture2D" uid="uid://hi1xgl8dsa8d" path="res://Assets/Menu Assets/Option button pressed.png" id="4_j4lre"]
+[ext_resource type="Texture2D" uid="uid://cqrnlgmn36ogh" path="res://Assets/Menu Assets/Option button hover.png" id="5_l05ls"]
+[ext_resource type="Texture2D" uid="uid://dnv6xfd5l60vh" path="res://Assets/Menu Assets/Credits button.png" id="6_r6jt1"]
+[ext_resource type="Texture2D" uid="uid://ddp5duqrntqr" path="res://Assets/Menu Assets/Credits button pressed.png" id="7_4kwkp"]
+[ext_resource type="Texture2D" uid="uid://dagp0t5vxe3uq" path="res://Assets/Menu Assets/Credits button hover.png" id="8_vd3lo"]
+[ext_resource type="Texture2D" uid="uid://ddbkayok2eg11" path="res://Assets/Menu Assets/start button.png" id="9_dacnh"]
+[ext_resource type="Texture2D" uid="uid://bt2q1n38l45qg" path="res://Assets/Menu Assets/start button hover.png" id="11_25p2b"]
+[ext_resource type="AudioStream" uid="uid://bjshnce1iyrmn" path="res://Assets/SFX/enter sound.ogg" id="12_j4lre"]
+[ext_resource type="Texture2D" uid="uid://bc4mneyrhayru" path="res://Assets/Menu Assets/Spage Angels Logo.png" id="12_kntsg"]
 [ext_resource type="AudioStream" uid="uid://da6akpkmmsloc" path="res://Assets/Music/Stargazer (1).mp3" id="12_ljai8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_minev"]
@@ -36,27 +38,9 @@ material = SubResource("ShaderMaterial_minev")
 layout_mode = 0
 offset_left = 2.0000305
 offset_top = -16.000002
-offset_right = 1130.0
-offset_bottom = 607.0
+offset_right = 1146.0
+offset_bottom = 648.0
 texture = ExtResource("2_ljai8")
-
-[node name="StartButton" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -179.99997
-offset_top = -133.0
-offset_right = 1020.0
-offset_bottom = 1067.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("1_x6lt7")
-texture_pressed = ExtResource("2_rlxw3")
-texture_hover = ExtResource("2_x2ps0")
 
 [node name="OptionsButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -65,27 +49,49 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -176.0
-offset_top = -39.0
-offset_right = 1024.0
-offset_bottom = 1161.0
+offset_left = -162.0
+offset_top = 67.00003
+offset_right = 870.0
+offset_bottom = 331.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("4_rlxw3")
-texture_pressed = ExtResource("6_56ax1")
-texture_hover = ExtResource("6_56ax1")
+texture_normal = ExtResource("3_minev")
+texture_pressed = ExtResource("4_j4lre")
+texture_hover = ExtResource("5_l05ls")
 
 [node name="CreditsButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 401.00003
-offset_top = 380.0
-offset_right = 1601.0
-offset_bottom = 1580.0
+layout_mode = 1
+offset_left = 416.0
+offset_top = 477.0
+offset_right = 1448.0
+offset_bottom = 741.0
 scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("7_ljai8")
-texture_pressed = ExtResource("8_minev")
-texture_hover = ExtResource("9_j4lre")
+texture_normal = ExtResource("6_r6jt1")
+texture_pressed = ExtResource("7_4kwkp")
+texture_hover = ExtResource("8_vd3lo")
+
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -18.0
+offset_right = 872.0
+offset_bottom = 246.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("9_dacnh")
+texture_pressed = ExtResource("2_rlxw3")
+texture_hover = ExtResource("11_25p2b")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="StartButton"]
+position = Vector2(0, 570)
+stream = ExtResource("12_j4lre")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -94,13 +100,13 @@ anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -196.0
-offset_top = -36.000004
+offset_top = -24.0
 offset_right = 748.0
-offset_bottom = 260.0
+offset_bottom = 272.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("10_l05ls")
+texture = ExtResource("12_kntsg")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_ljai8")
