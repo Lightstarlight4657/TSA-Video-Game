@@ -2,7 +2,6 @@
 
 [ext_resource type="Shader" uid="uid://dbn8wymv285ed" path="res://Scroll.gdshader" id="1_56ax1"]
 [ext_resource type="Texture2D" uid="uid://cpcke455kk5nb" path="res://Assets/Menu Assets/BetterPlanets.png" id="2_ljai8"]
-[ext_resource type="Texture2D" uid="uid://bl4epceb4rcpa" path="res://Assets/Menu Assets/start button pressed.png" id="2_rlxw3"]
 [ext_resource type="Texture2D" uid="uid://b0blxrgd57701" path="res://Assets/Menu Assets/Option button.png" id="3_minev"]
 [ext_resource type="Texture2D" uid="uid://hi1xgl8dsa8d" path="res://Assets/Menu Assets/Option button pressed.png" id="4_j4lre"]
 [ext_resource type="Texture2D" uid="uid://cqrnlgmn36ogh" path="res://Assets/Menu Assets/Option button hover.png" id="5_l05ls"]
@@ -10,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ddp5duqrntqr" path="res://Assets/Menu Assets/Credits button pressed.png" id="7_4kwkp"]
 [ext_resource type="Texture2D" uid="uid://dagp0t5vxe3uq" path="res://Assets/Menu Assets/Credits button hover.png" id="8_vd3lo"]
 [ext_resource type="Texture2D" uid="uid://ddbkayok2eg11" path="res://Assets/Menu Assets/start button.png" id="9_dacnh"]
+[ext_resource type="Texture2D" uid="uid://bxhlcto4cerxv" path="res://Assets/Menu Assets/Start Button Pressed.png" id="10_j4lre"]
 [ext_resource type="Texture2D" uid="uid://bt2q1n38l45qg" path="res://Assets/Menu Assets/start button hover.png" id="11_25p2b"]
 [ext_resource type="AudioStream" uid="uid://bjshnce1iyrmn" path="res://Assets/SFX/enter sound.ogg" id="12_j4lre"]
 [ext_resource type="Texture2D" uid="uid://bc4mneyrhayru" path="res://Assets/Menu Assets/Spage Angels Logo.png" id="12_kntsg"]
@@ -41,6 +41,29 @@ offset_top = -16.000002
 offset_right = 1146.0
 offset_bottom = 648.0
 texture = ExtResource("2_ljai8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0, 0.4627451, 1, 0.15686275)
+layout_mode = 0
+offset_left = 3.0
+offset_top = -14.0
+offset_right = 1147.0
+offset_bottom = 650.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -196.0
+offset_top = -24.0
+offset_right = 748.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("12_kntsg")
 
 [node name="OptionsButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -86,27 +109,12 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("9_dacnh")
-texture_pressed = ExtResource("2_rlxw3")
+texture_pressed = ExtResource("10_j4lre")
 texture_hover = ExtResource("11_25p2b")
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="StartButton"]
 position = Vector2(0, 570)
 stream = ExtResource("12_j4lre")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -196.0
-offset_top = -24.0
-offset_right = 748.0
-offset_bottom = 272.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("12_kntsg")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_ljai8")
