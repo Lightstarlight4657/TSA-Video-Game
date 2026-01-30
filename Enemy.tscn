@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck2coio70v5yg"]
+
+[ext_resource type="Script" uid="uid://t8wyo31ahhif" path="res://Scenes/enemy.gd" id="1_wovta"]
+[ext_resource type="PackedScene" uid="uid://crulge2dscff1" path="res://Scenes/EnemyBullet.tscn" id="2_kpr8r"]
+[ext_resource type="Texture2D" uid="uid://gsppgd8yc58t" path="res://Assets/images/actual actual first wave enemy.jpg" id="2_xeo28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afpow"]
+size = Vector2(14.412703, 17.456871)
+
+[node name="Enemy" type="Area2D" groups=["Enemy"]]
+collision_layer = 2
+script = ExtResource("1_wovta")
+bullet_scene = ExtResource("2_kpr8r")
+
+[node name="SPrite 2d" type="Sprite2D" parent="."]
+position = Vector2(-2.3841858e-07, 0)
+scale = Vector2(0.23905109, 0.2189781)
+texture = ExtResource("2_xeo28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+editor_description = "This is the sample sqaure for the enemy"
+position = Vector2(0.1249972, 0.24999619)
+scale = Vector2(9.280009, 6.96001)
+shape = SubResource("RectangleShape2D_afpow")
+debug_color = Color(7.2196126e-06, 0.58226126, 0.79383284, 0.41960785)
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 2.0
