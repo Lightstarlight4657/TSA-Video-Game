@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://crulge2dscff1"]
+
+[ext_resource type="Script" uid="uid://bta47n6tobi12" path="res://Scenes/enemy_bullet.gd" id="1_ymxas"]
+[ext_resource type="Texture2D" uid="uid://l1tvouxxadyv" path="res://Assets/images/enemy bullet for space invaders.png" id="2_i5veg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_701ao"]
+size = Vector2(30, 46)
+
+[node name="EnemyBullet" type="Area2D"]
+script = ExtResource("1_ymxas")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.028320313, 0.080729164)
+texture = ExtResource("2_i5veg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_701ao")
