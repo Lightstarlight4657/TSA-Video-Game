@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://da8cbu23rt1rx"]
+
+[ext_resource type="Script" uid="uid://bfnnj43atohw" path="res://Assets/Boss/boss.gd" id="1_4jvlg"]
+[ext_resource type="Texture2D" uid="uid://juxp4vx5c6bh" path="res://Assets/images/third wave (boss) enemy ship.png" id="1_dtosr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jvlg"]
+size = Vector2(663, 514)
+
+[node name="Boss" type="Area2D" groups=["Boss"]]
+collision_layer = 2
+script = ExtResource("1_4jvlg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.99999905, 2)
+scale = Vector2(0.7411111, 0.9980469)
+texture = ExtResource("1_dtosr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_4jvlg")
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.8
+
+[node name="RapidFireShootTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="RapidFireCoolTimer" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
